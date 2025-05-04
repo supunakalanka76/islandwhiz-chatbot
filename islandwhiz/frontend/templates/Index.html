@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IslandWhiz - Your Island Guide</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/b1ca547f49.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="app-container">
+      <div class="header">
+        <div class="logo-container">
+          <h1><span class="logo-icon">🌴</span> IslandWhiz</h1>
+          <p class="tagline">Your personal island guide</p>
+        </div>
+        <div class="theme-toggle" onclick="toggleTheme()">
+          <i class="fa-solid fa-moon light-icon"></i>
+          <i class="fa-solid fa-sun dark-icon"></i>
+        </div>
+      </div>
+
+      <div class="chat-wrapper">
+        <div class="chat-container" id="chatContainer">
+          <!-- Welcome message -->
+          <div
+            class="chat bot welcome-message animate__animated animate__fadeIn"
+          >
+            <div class="avatar">
+              <i class="fa-solid fa-umbrella-beach"></i>
+            </div>
+            
+            </div>
+          </div>
+        </div>
+
+        <div class="footer">
+          <div class="input-container">
+            <input
+              type="text"
+              id="userInput"
+              placeholder="Ask about islands, beaches, or travel..."
+            />
+            <button id="sendBtn" onclick="sendMessage()">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </div>
+          <p class="hint-text">Press Enter to send, Shift+Enter for new line</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='javaScript.js') }}"></script>
+  </body>
+</html>

@@ -1,0 +1,175 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - good morning
+    - good evening
+    - hi there
+    - hello there
+    - greetings
+    - hey buddy
+    - hi bot
+    - morning
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you
+    - see you later
+    - take care
+    - I'm leaving
+    - catch you later
+    - talk to you soon
+
+- intent: affirm
+  examples: |
+    - yes
+    - of course
+    - sure
+    - definitely
+    - yeah
+    - sounds good
+    - okay
+    - yep
+
+- intent: deny
+  examples: |
+    - no
+    - never
+    - nope
+    - not really
+    - I don't think so
+    - nah
+
+- intent: mood_great
+  examples: |
+    - I feel great
+    - wonderful
+    - amazing
+    - I’m doing great
+    - life is good
+    - I’m happy today
+    - feeling awesome
+
+- intent: mood_unhappy
+  examples: |
+    - I am sad
+    - not good
+    - feeling down
+    - I am upset
+    - I feel terrible
+    - not in a good mood
+    - feeling blue
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you real?
+    - are you human?
+    - who made you?
+    - are you a real person?
+    - are you just AI?
+
+- intent: ask_destinations
+  examples: |
+    - What are the top travel destinations in Sri Lanka?
+    - Suggest some places to visit in Sri Lanka
+    - Recommend tourist destinations
+    - where should I go in Sri Lanka?
+    - tell me famous places to visit
+    - I'm planning a trip — where should I go?
+    - Show me historical places in Sri Lanka
+    - What are the best mountain towns in Sri Lanka?
+    - Popular places in Sri Lanka?
+    - Any recommendations for Sri Lanka?
+
+- intent: ask_about_destination
+  examples: |
+    - Tell me about [Sigiriya](destination)
+    - What is [Kandy](destination) like?
+    - Can you describe [Galle](destination)?
+    - What should I know about [Ella](destination)?
+    - Describe [Anuradhapura](destination)
+    - Give me an overview of [Trincomalee](destination)
+    - What can I expect in [Nuwara Eliya](destination)?
+    - I want to learn more about [Polonnaruwa](destination)
+    - What is [Jaffna](destination)?
+    - Info on [Colombo](destination)
+    - Give details about [Matara](destination)
+    - Briefly explain [Bentota](destination)
+    - Say something about [Negombo](destination)
+    - Can you tell me about [Haputale](destination)?
+    - Anything interesting about [Arugam Bay](destination)?
+    - facts about [Dambulla](destination)?
+    - overview of [Pinnawala](destination)
+
+- intent: ask_best_time
+  examples: |
+    - When is the best time to visit [Kandy](destination)?
+    - What's the ideal season to go to [Ella](destination)?
+    - Best month to visit [Galle](destination)?
+    - When should I go to [Nuwara Eliya](destination)?
+    - perfect time to travel to [Jaffna](destination)?
+    - What season is best for [Sigiriya](destination)?
+    - What months are good for [Unawatuna](destination)?
+    - Is [Arugam Bay](destination) good in July?
+    - good time to visit [Matara](destination)?
+    - when is [Trincomalee](destination) best to visit?
+    - What's the right time to explore [Bentota](destination)?
+    - Which season suits [Haputale](destination) best?
+
+- intent: ask_travel_advice
+  examples: |
+    - Do you have any travel tips for [Anuradhapura](destination)?
+    - Give me some travel advice for visiting [Jaffna](destination)
+    - What should I know before going to [Sigiriya](destination)?
+    - travel safety tips for [Colombo](destination)
+    - what to be aware of in [Ella](destination)?
+    - advice for [Trincomalee](destination)
+    - What are the do's and don'ts in [Polonnaruwa](destination)?
+    - Tips for exploring [Pinnawala](destination)?
+    - any advice for [Nuwara Eliya](destination)?
+    - best practices in [Galle](destination)?
+    - what should I pack for [Unawatuna](destination)?
+    - how should I plan my trip to [Negombo](destination)?
+
+- intent: ask_live_info
+  examples: |
+    - What is happening now in [Colombo](destination)?
+    - Give me current updates for [Nuwara Eliya](destination)
+    - Show me live info about [Arugam Bay](destination)
+    - current news in [Trincomalee](destination)
+    - what's going on in [Galle](destination)?
+    - Is [Pasikuda](destination) open now?
+    - Is it safe to visit [Unawatuna](destination) today?
+    - Are there any closures in [Sigiriya](destination)?
+    - updates for [Kandy](destination)?
+    - live situation in [Anuradhapura](destination)?
+    - any alerts for [Jaffna](destination)?
+    - real-time weather in [Ella](destination)?
+
+- intent: ask_about_destination
+  examples: |
+    - Tell me about [Sigiriya](destination)
+    - What is [Kandy](destination) like?
+    - Can you describe [Galle](destination)?
+    - What should I know about [Ella](destination)?
+    - Describe [Anuradhapura](destination)
+    - Give me an overview of [Trincomalee](destination)
+    - What can I expect in [Nuwara Eliya](destination)?
+    - I want to learn more about [Polonnaruwa](destination)
+    - What is [Jaffna](destination)?
+    - Info on [Colombo](destination)
+    - Give details about [Matara](destination)
+    - Briefly explain [Bentota](destination)
+    - Say something about [Negombo](destination)
+    - Can you tell me about [Haputale](destination)?
+    - Anything interesting about [Arugam Bay](destination)?
+    - facts about [Dambulla](destination)?
+    - overview of [Pinnawala](destination)
+    - what makes [Unawatuna](destination) special?

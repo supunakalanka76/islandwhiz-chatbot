@@ -1,0 +1,14 @@
+{
+  "0": "affirm",
+  "1": "ask_about_destination",
+  "2": "ask_best_time",
+  "3": "ask_destinations",
+  "4": "ask_live_info",
+  "5": "ask_travel_advice",
+  "6": "bot_challenge",
+  "7": "deny",
+  "8": "goodbye",
+  "9": "greet",
+  "10": "mood_great",
+  "11": "mood_unhappy"
+}

@@ -1,0 +1,100 @@
+version: "3.1"
+
+rules:
+
+- rule: user greets
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- rule: user says goodbye
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- rule: user asks for destinations
+  steps:
+    - intent: ask_destinations
+    - action: action_list_destinations
+
+- rule: user asks best time to visit a place
+  steps:
+    - intent: ask_best_time
+      entities:
+        - destination: "Kandy"
+    - slot_was_set:
+        - destination: "Kandy"
+    - action: action_best_time_to_visit
+
+- rule: user asks travel advice for destination
+  steps:
+    - intent: ask_travel_advice
+      entities:
+        - destination: "Jaffna"
+    - slot_was_set:
+        - destination: "Jaffna"
+    - action: action_travel_advice
+
+- rule: user asks for live info
+  steps:
+    - intent: ask_live_info
+      entities:
+        - destination: "Galle"
+    - slot_was_set:
+        - destination: "Galle"
+    - action: action_live_info
+
+- rule: follow-up after destination suggestion
+  steps:
+    - intent: ask_destinations
+    - action: action_list_destinations
+    - intent: ask_live_info
+      entities:
+        - destination: "Polonnaruwa"
+    - slot_was_set:
+        - destination: "Polonnaruwa"
+    - action: action_live_info
+
+- rule: confirm after advice
+  steps:
+    - intent: ask_travel_advice
+      entities:
+        - destination: "Anuradhapura"
+    - slot_was_set:
+        - destination: "Anuradhapura"
+    - action: action_travel_advice
+    - intent: affirm
+    - action: action_best_time_to_visit
+
+- rule: user asks for a description of a destination
+  steps:
+    - intent: ask_about_destination
+      entities:
+        - destination: "Sigiriya"
+    - slot_was_set:
+        - destination: "Sigiriya"
+    - action: action_describe_destination
+
+- rule: user asks for safety tips for a destination
+  steps:
+    - intent: ask_safety_tips
+      entities:
+        - destination: "Sigiriya"
+    - slot_was_set:
+        - destination: "Sigiriya"
+    - action: action_safety_tips
+
+- rule: user asks about and follows up with live info
+  steps:
+    - intent: ask_about_destination
+      entities:
+        - destination: "Ella"
+    - slot_was_set:
+        - destination: "Ella"
+    - action: action_describe_destination
+    - intent: ask_live_info
+      entities:
+        - destination: "Ella"
+    - slot_was_set:
+        - destination: "Ella"
+    - action: action_live_info

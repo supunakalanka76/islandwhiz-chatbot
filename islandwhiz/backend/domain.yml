@@ -1,0 +1,56 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - ask_destinations
+  - ask_best_time
+  - ask_travel_advice
+  - ask_live_info
+  - ask_about_destination
+  - ask_safety_tips
+
+entities:
+  - destination
+
+slots:
+  destination:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: destination
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I help you plan your trip to Sri Lanka?"
+
+  utter_goodbye:
+    - text: "Goodbye! Safe travels."
+
+  utter_iamabot:
+    - text: "I'm IslandWhiz, your Sri Lanka travel guide bot!"
+
+  utter_fallback:
+    - text: "I'm sorry, I didn't quite get that. Can you please rephrase?"
+
+  utter_safety_tips:
+    - text: "Here are some general safety tips: always stay hydrated, avoid isolated areas at night, and keep your valuables secured."
+
+actions:
+  - action_list_destinations
+  - action_best_time_to_visit
+  - action_travel_advice
+  - action_live_info
+  - action_describe_destination
+  - action_safety_tips
+  - action_default_fallback  # fallback handler
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
