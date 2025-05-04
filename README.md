@@ -11,7 +11,6 @@
 - 📍 Recommends Sri Lankan destinations (e.g., Ella, Sigiriya, Mirissa)
 - 📅 Provides the best visiting time for each place
 - 🌐 Shares live travel info and cultural advice
-- 🖼️ Displays image cards for each location
 - ⚙️ Modular structure using Rasa, Flask, and MySQL
 
 ---
@@ -37,7 +36,6 @@ islandwhiz/
 ├── backend/
 │   ├── app.py                # Flask server
 │   ├── actions.py            # Rasa custom actions (DB access)
-│   ├── requirements.txt      # Python dependencies
 │
 ├── rasa/
 │   ├── nlu.yml               # Training data for intents
