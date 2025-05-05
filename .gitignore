@@ -1,52 +1,30 @@
-# Python
+# Byte-compiled / cache files
 __pycache__/
 *.py[cod]
 *.pyo
-*.pyd
-*.env
-*.venv
-env/
+
+# Rasa models
+models/
+*.tar.gz
+
+# Virtual environments
 venv/
-ENV/
-VENV/
-env.bak/
-venv.bak/
+env/
+.venv/
 
-# Flask
-instance/
-*.db
-*.sqlite3
+# Logs and debug files
+*.log
+*.tmp
 
-# VSCode
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VSCode settings
 .vscode/
 
-# PyCharm
-.idea/
+# Python dependency files
+Pipfile.lock
 
-# macOS
+# System files
 .DS_Store
-
-# Logs
-*.log
-
-# Python test & coverage
-htmlcov/
-.tox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-
-# Env variables
-.env
-.env.*
-
-# Node (if any npm packages were added for frontend work)
-node_modules/
-
-# Misc
-*.bak
-*.swp
+Thumbs.db
