@@ -58,11 +58,15 @@ islandwhiz/
 
 ## ⚙️ Installation and Setup
 
-### 1. Clone the Repository
+### 1. Clone the Repository and install rasa
 
 ```bash
 git clone https://github.com/supunakalanka76/islandwhiz.git
 cd islandwhiz
+```
+
+```bash
+pip install rasa
 ```
 
 ### 2. Set Up Python Virtual Environment
