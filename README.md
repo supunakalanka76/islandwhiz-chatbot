@@ -135,12 +135,12 @@ Go to `http://localhost:5000` in your browser to interact with the chatbot.
 ## 🙋‍♂️ Authors
 
 **M.W.H.G. Supun Akalanka**  
-📚 BEng (Hons) Software Engineering – London Metropolitan University  
+📚 BEng (Hons) Software Engineering (TOP-UP) – London Metropolitan University  
 🎓 AI Module – Coursework 2  
 📅 April 2025
 
 **R. D. Sahan Lakmal Senavirathna**  
-📚 BEng (Hons) Software Engineering – London Metropolitan University  
+📚 BEng (Hons) Software Engineering (TOP-UP) – London Metropolitan University  
 🎓 AI Module – Coursework 2  
 📅 April 2025
 
